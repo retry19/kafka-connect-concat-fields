@@ -88,12 +88,12 @@ public class ConcatFieldsTest {
         formValue.configure(props);
 
         final Schema valueSchema = SchemaBuilder.struct().name("example").version(1).doc("doc")
-                .field("WalletId", Schema.STRING_SCHEMA)
-                .field("CardId", Schema.STRING_SCHEMA)
-                .build();
+            .field("WalletId", Schema.STRING_SCHEMA)
+            .field("CardId", Schema.STRING_SCHEMA)
+            .build();
         final Struct value = new Struct(valueSchema)
-                .put("WalletId", "abc")
-                .put("CardId", "def");
+            .put("WalletId", "abc")
+            .put("CardId", "def");
 
         final SourceRecord record = new SourceRecord(null, null, "test", 0, valueSchema, value);
         final SourceRecord transformedRecord = formValue.apply(record);
@@ -112,12 +112,12 @@ public class ConcatFieldsTest {
         formValue.configure(props);
 
         final Schema valueSchema = SchemaBuilder.struct().name("example").version(1).doc("doc")
-                .field("WalletId", Schema.STRING_SCHEMA)
-                .field("CardId", Schema.STRING_SCHEMA)
-                .build();
+            .field("WalletId", Schema.STRING_SCHEMA)
+            .field("CardId", Schema.STRING_SCHEMA)
+            .build();
         final Struct value = new Struct(valueSchema)
-                .put("WalletId", "abc")
-                .put("CardId", "def");
+            .put("WalletId", "abc")
+            .put("CardId", "def");
 
         final SourceRecord record = new SourceRecord(null, null, "test", 0, valueSchema, value);
         final SourceRecord transformedRecord = formValue.apply(record);
@@ -136,12 +136,12 @@ public class ConcatFieldsTest {
         formValue.configure(props);
 
         final Schema valueSchema = SchemaBuilder.struct().name("example").version(1).doc("doc")
-                .field("WalletId", Schema.STRING_SCHEMA)
-                .field("CardId", Schema.STRING_SCHEMA)
-                .build();
+            .field("WalletId", Schema.STRING_SCHEMA)
+            .field("CardId", Schema.STRING_SCHEMA)
+            .build();
         final Struct value = new Struct(valueSchema)
-                .put("WalletId", "abc")
-                .put("CardId", "def");
+            .put("WalletId", "abc")
+            .put("CardId", "def");
 
         final SourceRecord record = new SourceRecord(null, null, "test", 0, valueSchema, value);
         final SourceRecord transformedRecord = formValue.apply(record);
